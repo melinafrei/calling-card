@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Avara-Bold";
+    src: url("fonts/Avara-Bold.woff2") format("woff2");
+}
+
+body{
+    background: #600E0E;
+    background: linear-gradient(180deg, rgba(96, 14, 14, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    font-family: "Avara-Bold", serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+h1{
+    margin: 0; 
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;   /* horizontal zentrieren */
+    align-items: center;       /* vertikal zentrieren */
+}
+
+.email {
+  display: block;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+
+.email:hover {
+  opacity: 1;
+}
+
+/* ---------------------------- overall ----------------------------  */
+
+.grid-container {
+    display: grid;
+    padding: 15px;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas:
+    "bio bio bio email email email"
+    "name name name name name name"
+    "image-5 image-5 image-5 image-5 . ."
+    "text-5 . . . . ."
+    "image-1 text-2 image-3 image-4 . ."
+    "text-1 image-2 text-3 text-4 . .";
+}
+
+/* ---------------------------- raster ----------------------------  */
+
+.name {
+    grid-area: name;
+    top: 0;
+    z-index: 15;
+    color: white;
+}
+
+.name h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.bio {
+    grid-area: bio;
+    align-self: center; 
+    color: white;
+}
+
+/* ---------------------------- text ----------------------------  */
+
+.image-1 {
+    grid-area: image-1;
+}
+
+.image-2 {
+    grid-area: image-2;
+}
+
+.image-3 {
+    grid-area: image-3;
+}
+
+.image-4 {
+    grid-area: image-4;
+}
+
+.image-5 {
+    grid-area: image-5;
+}
+
+/* ---------------------------- bilder ----------------------------  */
+
+.text-1 {
+    grid-area: text-1;
+    color: white;
+}
+
+.text-2 {
+    grid-area: text-2;
+    color: white;
+}
+
+.text-3 {
+    grid-area: text-3;
+    color:white;
+}
+
+.text-4 {
+    grid-area: text-4;
+    color: white;
+}
+
+.text-5 {
+    grid-area: text-5;
+    color: white;
+}
+
+/* ---------------------------- textbeschriebe ----------------------------  */
