@@ -68,6 +68,8 @@ h3 {
 .mail {
     grid-area: mail;
     align-self: right; 
+    position: relative; 
+    z-index: 1000;  
 }
 
 .mail p {
@@ -383,8 +385,6 @@ img {
 
 /* ---------------------------- Blur ----------------------------  */
 
-
-
 .grid-container > div {
   position: relative;
 }
@@ -392,3 +392,5 @@ img {
 .grid-container > div:hover {
   z-index: 999;
 }
+
+/* ---------------------------- Ebenen ----------------------------  */
