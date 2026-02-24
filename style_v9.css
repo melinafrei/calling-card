@@ -26,14 +26,17 @@ h2 {
     margin: 0; 
     text-align: left;
     font-family: "Italianno", cursive;
+    font-size: 175px;
+    line-height: 130px;
+    color: white;
 }
 
 h3 {
-    margin-top: 100px;
     text-align: right;
     font-family: "Italianno", cursive;
-    font-size: 115px;
+    font-size: 175px;
     line-height: 130px;
+    color: white;
 }
 
 /* ---------------------------- overall ----------------------------  */
@@ -50,8 +53,8 @@ h3 {
     "layout1-5 layout1-5 layout1-2 layout1-3"
     "titel-layout1 titel-layout1 . layout1-4"
 
-    "projektbeschrieb-layout2 layout2-1 layout2-4 layout2-4"
-    ". layout2-2 layout2-4 layout2-4"
+    ". layout2-1 layout2-4 layout2-4"
+    "projektbeschrieb-layout2 layout2-2 layout2-4 layout2-4"
     "titel-layout2 titel-layout2 layout2-3 layout2-5"
 
     "layout4paris-4 layout4paris-4 titel-layout4paris titel-layout4paris"
@@ -67,11 +70,12 @@ h3 {
     top: 0;
     z-index: 15;
     color: white;
+    margin-top: -80px;
 }
 
 .name h1 {
     text-align: center;
-    font-size: 200px;
+    font-size: 260px;
 }
 
 .bio {
@@ -103,38 +107,37 @@ h3 {
 .titel-layout1 {
     grid-area: titel-layout1;
     top: 0;
-    color: white;
-    font-size: 115px;
+    margin-top: 30px
 }
 
 .titel-layout2 {
     grid-area: titel-layout2;
     top: 0;
-    color: white;
-    font-size: 115px;
-    line-height: 130px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
+
+.titel-layout2 h3 {
+    margin-top: 5px;
+}
+
 
 .titel-layout4paris {
     grid-area: titel-layout4paris;
     top: 0;
-    color: white;
-    font-size: 115px;
-    margin-top: 20px
+    margin-top: 60px
 }
     /* ---------------------------- titel ----------------------------  */
 
 .projektbeschrieb-layout1 {
     grid-area: projektbeschrieb-layout1;
     color: white;
-    margin-bottom: 20px;
+    margin-top: 65px;
 }
 
 .projektbeschrieb-layout2 {
     grid-area: projektbeschrieb-layout2;
     color: white;
-    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .projektbeschrieb-layout4paris {
@@ -154,10 +157,11 @@ h3 {
 
 .layout1-1 img {
     transition: transform 2s ease;
+    transform-origin: top center;
 }
 
 .layout1-1 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout1-2 {
@@ -166,10 +170,11 @@ h3 {
 
 .layout1-2 img {
     transition: transform 2s ease;
+    transform-origin: top center;
 }
 
 .layout1-2 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout1-3 {
@@ -178,10 +183,11 @@ h3 {
 
 .layout1-3 img {
     transition: transform 2s ease;
+    transform-origin: top right;
 }
 
 .layout1-3 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout1-4 {
@@ -191,10 +197,11 @@ h3 {
 
 .layout1-4 img {
     transition: transform 2s ease;
+    transform-origin: top right;
 }
 
 .layout1-4 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout1-5 {
@@ -202,17 +209,18 @@ h3 {
 }
 
 .layout1-5 img {
-      max-width: 100%;
+    max-width: 100%;
     height: 100%; 
     object-fit: cover;
 }
 
 .layout1-5 img {
+    transform-origin: top left;
     transition: transform 2s ease;
 }
 
 .layout1-5 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
     /* ---------------------------- layout1 ----------------------------  */
@@ -223,10 +231,11 @@ h3 {
 
 .layout2-1 img {
     transition: transform 2s ease;
+    transform-origin: top center;
 }
 
 .layout2-1 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout2-2 {
@@ -234,10 +243,11 @@ h3 {
 }
 img {
     transition: transform 2s ease;
+    transform-origin: top center;
 }
 
 .layout2-2 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout2-3 {
@@ -246,10 +256,11 @@ img {
 
 .layout2-3 img {
     transition: transform 2s ease;
+    transform-origin: top center;
 }
 
 .layout2-3 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout2-4 {
@@ -258,10 +269,11 @@ img {
 
 .layout2-4 img {
     transition: transform 2s ease;
+    transform-origin: top right;
 }
 
 .layout2-4 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout2-5 {
@@ -271,10 +283,11 @@ img {
 
 .layout2-5 img {
     transition: transform 2s ease;
+    transform-origin: top right;
 }
 
 .layout2-5 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
     /* ---------------------------- layout2 ----------------------------  */
@@ -286,10 +299,11 @@ img {
 
 .layout4paris-1 img {
     transition: transform 2s ease;
+    transform-origin: top center;
 }
 
 .layout4paris-1 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout4paris-2 {
@@ -299,10 +313,11 @@ img {
 
 .layout4paris-2 img {
     transition: transform 2s ease;
+    transform-origin: top right;
 }
 
 .layout4paris-2 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout4paris-3 {
@@ -311,10 +326,11 @@ img {
 
 .layout4paris-3 img {
     transition: transform 2s ease;
+    transform-origin: top center;
 }
 
 .layout4paris-3 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout4paris-4 {
@@ -323,23 +339,25 @@ img {
 
 .layout4paris-4 img {
     transition: transform 2s ease;
+    transform-origin: top left;
 }
 
 .layout4paris-4 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
 .layout4paris-5 {
     grid-area: layout4paris-5;
-    margin-bottom: 50px
+    margin-bottom: 150px
 }
 
 .layout4paris-5 img {
     transition: transform 2s ease;
+    transform-origin: top center;
 }
 
 .layout4paris-5 img:hover {
-    transform: scale(1.70);
+    transform: scale(1.50);
 }
 
     /* ---------------------------- layout4paris ----------------------------  */
@@ -347,15 +365,21 @@ img {
 /* ---------------------------- bilder ----------------------------  */
 
 .projektbeschrieb-layout1,
-.projektbeschireb-layout2,
+.projektbeschrieb-layout2,
 .projektbeschrieb-layout4paris {
     opacity: 0;
-    transition: opacity 0.3 ease;
+    transition: opacity 0.3s ease;
 }
 
-.titel-layout1:hover .projektbeschrieb-layout1,
-.titel-layout2:hover .projektbeschrieb-layout2,
-.titel-layout4paris:hover .projektbeschrieb-layout4paris {
+.titel-layout1:hover ~ .projektbeschrieb-layout1 {
+    opacity: 1;
+}
+
+
+.titel-layout2:hover ~ .projektbeschrieb-layout2 {
+    opacity: 1;
+}
+.titel-layout4paris:hover ~ .projektbeschrieb-layout4paris {
     opacity: 1; 
 }
 
@@ -373,3 +397,13 @@ img {
 }
 
 /* ---------------------------- Blur ----------------------------  */
+
+
+
+.grid-container > div {
+  position: relative;
+}
+
+.grid-container > div:hover {
+  z-index: 999;
+}
