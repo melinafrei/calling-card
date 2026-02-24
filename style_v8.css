@@ -1,0 +1,379 @@
+body{
+    background: #600E0E;
+    background: linear-gradient(180deg, rgba(96, 14, 14, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+
+h1{
+    margin: 0; 
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;   /* horizontal zentrieren */
+    align-items: center;       /* vertikal zentrieren */
+    font-family: "Italianno", cursive;
+}
+
+h2 {
+    margin: 0; 
+    text-align: left;
+    font-family: "Italianno", cursive;
+}
+
+h3 {
+    margin-top: 100px;
+    text-align: right;
+    font-family: "Italianno", cursive;
+    font-size: 115px;
+}
+
+/* ---------------------------- overall ----------------------------  */
+
+.grid-container {
+    display: grid;
+    padding: 15px;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-areas:
+    "bio name name mail"
+    "layout1-5 layout1-5 layout1-1 projektbeschrieb-layout1"
+    "layout1-5 layout1-5 layout1-2 layout1-3"
+    "titel-layout1 titel-layout1 . layout1-4"
+
+    ". layout2-1 layout2-4 layout2-4"
+    "projektbeschrieb-layout2 layout2-2 layout2-4 layout2-4"
+    "titel-layout2 titel-layout2 layout2-3 layout2-5"
+
+    "layout4paris-4 layout4paris-4 titel-layout4paris titel-layout4paris"
+    "layout4paris-4 layout4paris-4 layout4paris-1 layout4paris-2"
+    "projektbeschrieb-layout4paris layout4paris-3 layout4paris-5 ."
+    ;
+}
+
+/* ---------------------------- raster ----------------------------  */
+
+.name {
+    grid-area: name;
+    top: 0;
+    z-index: 15;
+    color: white;
+}
+
+.name h1 {
+    text-align: center;
+    font-size: 180px;
+}
+
+.bio {
+    grid-area: bio;
+    align-self: left; 
+    color: white;
+}
+
+.mail {
+    grid-area: mail;
+    align-self: right; 
+}
+
+.mail p {
+    text-align: right;
+}
+
+.mail a {
+    color: white;
+    text-decoration: none;
+}
+
+.mail a:hover {
+    text-decoration: underline;
+}
+
+    /* ---------------------------- name ----------------------------  */
+
+.titel-layout1 {
+    grid-area: titel-layout1;
+    top: 0;
+    color: white;
+    font-size: 115px;
+}
+
+.titel-layout2 {
+    grid-area: titel-layout2;
+    top: 0;
+    color: white;
+    font-size: 115px;
+    line-height: 130px;
+    margin-top: 30px;
+}
+
+.titel-layout4paris {
+    grid-area: titel-layout4paris;
+    top: 0;
+    color: white;
+    font-size: 115px;
+    margin-top: 20px
+}
+    /* ---------------------------- titel ----------------------------  */
+
+.projektbeschrieb-layout1 {
+    grid-area: projektbeschrieb-layout1;
+    color: white;
+    align-self: end;
+}
+
+.projektbeschrieb-layout2 {
+    grid-area: projektbeschrieb-layout2;
+    color: white;
+    align-self: end;
+}
+
+.projektbeschrieb-layout4paris {
+    grid-area: projektbeschrieb-layout4paris;
+    top: 0;
+    color: white;
+    margin-top: -18px;
+}
+
+    /* ---------------------------- projektbeschriebe ----------------------------  */
+
+/* ---------------------------- text ----------------------------  */
+
+.layout1-1 {
+    grid-area: layout1-1;
+}
+
+.layout1-1 img {
+    transition: transform 2s ease;
+}
+
+.layout1-1 img:hover {
+    transform: scale(1.70);
+}
+
+.layout1-2 {
+    grid-area: layout1-2;
+}
+
+.layout1-2 img {
+    transition: transform 2s ease;
+}
+
+.layout1-2 img:hover {
+    transform: scale(1.70);
+}
+
+.layout1-3 {
+    grid-area: layout1-3;
+}
+
+.layout1-3 img {
+    transition: transform 2s ease;
+}
+
+.layout1-3 img:hover {
+    transform: scale(1.70);
+}
+
+.layout1-4 {
+    grid-area: layout1-4;
+    margin-bottom: 250px;
+}
+
+.layout1-4 img {
+    transition: transform 2s ease;
+}
+
+.layout1-4 img:hover {
+    transform: scale(1.70);
+}
+
+.layout1-5 {
+    grid-area: layout1-5;
+}
+
+.layout1-5 img {
+      max-width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.layout1-5 img {
+    transition: transform 2s ease;
+}
+
+.layout1-5 img:hover {
+    transform: scale(1.70);
+}
+
+    /* ---------------------------- layout1 ----------------------------  */
+
+.layout2-1 {
+    grid-area: layout2-1;
+}
+
+.layout2-1 img {
+    transition: transform 2s ease;
+}
+
+.layout2-1 img:hover {
+    transform: scale(1.70);
+}
+
+.layout2-2 {
+    grid-area: layout2-2;
+}
+img {
+    transition: transform 2s ease;
+}
+
+.layout2-2 img:hover {
+    transform: scale(1.70);
+}
+
+.layout2-3 {
+    grid-area: layout2-3;
+}
+
+.layout2-3 img {
+    transition: transform 2s ease;
+}
+
+.layout2-3 img:hover {
+    transform: scale(1.70);
+}
+
+.layout2-4 {
+    grid-area: layout2-4;
+}
+
+.layout2-4 img {
+    transition: transform 2s ease;
+}
+
+.layout2-4 img:hover {
+    transform: scale(1.70);
+}
+
+.layout2-5 {
+    grid-area: layout2-5;
+    margin-bottom: 250px;
+}
+
+.layout2-5 img {
+    transition: transform 2s ease;
+}
+
+.layout2-5 img:hover {
+    transform: scale(1.70);
+}
+
+    /* ---------------------------- layout2 ----------------------------  */
+
+.layout4paris-1 {
+    grid-area: layout4paris-1;
+    align-self: end;
+}
+
+.layout4paris-1 img {
+    transition: transform 2s ease;
+}
+
+.layout4paris-1 img:hover {
+    transform: scale(1.70);
+}
+
+.layout4paris-2 {
+    grid-area: layout4paris-2;
+    align-self: end;
+}
+
+.layout4paris-2 img {
+    transition: transform 2s ease;
+}
+
+.layout4paris-2 img:hover {
+    transform: scale(1.70);
+}
+
+.layout4paris-3 {
+    grid-area: layout4paris-3;
+}
+
+.layout4paris-3 img {
+    transition: transform 2s ease;
+}
+
+.layout4paris-3 img:hover {
+    transform: scale(1.70);
+}
+
+.layout4paris-4 {
+    grid-area: layout4paris-4;
+}
+
+.layout4paris-4 img {
+    transition: transform 2s ease;
+}
+
+.layout4paris-4 img:hover {
+    transform: scale(1.70);
+}
+
+.layout4paris-5 {
+    grid-area: layout4paris-5;
+    margin-bottom: 50px
+}
+
+.layout4paris-5 img {
+    transition: transform 2s ease;
+}
+
+.layout4paris-5 img:hover {
+    transform: scale(1.70);
+}
+
+    /* ---------------------------- layout4paris ----------------------------  */
+
+/* ---------------------------- bilder ----------------------------  */
+
+.titel-layout1,
+.titel-layout2,
+.titel-layout4paris {
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+
+.projektbeschrieb-layout1:hover ~ .titel-layout1 {
+    opacity: 1;
+}
+
+.projektbeschrieb-layout2:hover ~ .titel-layout2 {
+    opacity: 1;
+}
+
+.projektbeschrieb-layout4paris:hover ~ .titel-layout4paris {
+    opacity: 1;
+}
+
+/* ---------------------------- unsichtbares erscheinen lassen ---------------------------- */
+
+.grid-container:has(.blur:hover) .blur{
+    filter: blur (3px);
+    opacity: 0.5;
+    transition:
+    filter 0.3 ease,
+    opacity 0.3 ease,
+}
+
+.blur:hover {
+    filter: blur(0) !important;
+    opacity: 1 !important;
+}
